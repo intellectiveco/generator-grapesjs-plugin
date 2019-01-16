@@ -71,6 +71,5 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "intellectiveco/generator-grapesjs-plugin",
-  "private": true
+  "repository": "https://github.com/intellectiveco/generator-grapesjs-plugin.git"
 }
