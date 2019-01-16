@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Intellective",
+      "authorEmail": "info@intellective.co",
+      "authorUrl": "intellective.co"
+    }
+  }
+}

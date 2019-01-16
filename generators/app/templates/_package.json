@@ -1,0 +1,38 @@
+{
+  "name": "<%= projectSlug %>",
+  "title": "<%= projectName %>",
+  "description": "<%= projectDescription %>",
+  "version": "1.0.0",
+  "main": "dist/<%= projectSlug %>.min.js",
+  "scripts": {
+    "lint": "eslint src",
+    "v:patch": "npm version --no-git-tag-version patch",
+    "build": "npm run v:patch && webpack --env.development",
+    "start": "webpack-dev-server --mode=development --open --progress --colors"
+  },
+  "author": "Intellective",
+  "license": "ISC",
+  "dependencies": {
+    "grapesjs": "^0.14.40",
+    "lodash": "^4.17.11"
+  },
+  "babel": {
+    "presets": ["env"],
+    "plugins": ["transform-object-rest-spread"]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "backbone": "^1.3.3",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.9.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
